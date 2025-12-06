@@ -1,0 +1,25 @@
+{
+    "name": "bedrock",
+    "$schema": "node_modules/nx/schemas/project-schema.json",
+    "targets": {
+        "xray": {
+            "executor": "@onivoro/onix:xray"
+        },
+        "terraform": {
+            "executor": "@onivoro/onix:terraform",
+            "defaultConfiguration": "apply",
+            "options": {
+                "envFile": ".env",
+                "terraformRoot": "terraform/aws-bedrock"
+            },
+            "configurations": {
+                "apply": {
+                    "terraformCommand": "apply"
+                },
+                "output": {
+                    "terraformCommand": "show -json"
+                }
+            }
+        }
+    }
+}

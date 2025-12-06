@@ -1,0 +1,484 @@
+.main {
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--onivoro-border);
+  margin-bottom: 4rem;
+}
+
+.logoContainer {
+  display: inline-block;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  margin-bottom: 2rem;
+  box-shadow: 0 0 40px rgba(46, 164, 79, 0.3);
+}
+
+.logo {
+  border-radius: 50%;
+  display: block;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.at {
+  color: var(--onivoro-primary);
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: var(--onivoro-text-muted);
+  font-weight: 300;
+}
+
+.mission {
+  margin-bottom: 4rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--onivoro-text);
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.missionText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--onivoro-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.missionText strong {
+  color: var(--onivoro-accent);
+  font-weight: 600;
+}
+
+.missionText em {
+  color: var(--onivoro-text);
+  font-style: normal;
+}
+
+.principles {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--onivoro-dark-secondary);
+  border: 1px solid var(--onivoro-border);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--onivoro-primary);
+}
+
+.cardIcon {
+  font-size: 2rem;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+  color: var(--onivoro-primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--onivoro-text);
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--onivoro-text-muted);
+}
+
+.cta {
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 1px solid var(--onivoro-border);
+  margin-bottom: 2rem;
+}
+
+/* Architecture Section */
+.architecture {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.architectureIntro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--onivoro-text-muted);
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.architectureIntro strong {
+  color: var(--onivoro-accent);
+}
+
+.architectureIntro em {
+  color: var(--onivoro-primary);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.architectureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.architectureCard {
+  background: var(--onivoro-dark-secondary);
+  border: 1px solid var(--onivoro-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: left;
+}
+
+.architectureIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.architectureCard h3 {
+  font-size: 1.5rem;
+  color: var(--onivoro-text);
+  margin-bottom: 1rem;
+}
+
+.architectureDescription {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--onivoro-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.architectureDescription strong {
+  color: var(--onivoro-primary);
+}
+
+/* Onion Layers */
+.layers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.layer {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(46, 164, 79, 0.1), transparent);
+  border-left: 3px solid var(--onivoro-primary);
+}
+
+.layer:nth-child(1) {
+  margin-left: 0;
+  background: linear-gradient(90deg, rgba(46, 164, 79, 0.25), transparent);
+}
+
+.layer:nth-child(2) {
+  margin-left: 1rem;
+  background: linear-gradient(90deg, rgba(46, 164, 79, 0.18), transparent);
+}
+
+.layer:nth-child(3) {
+  margin-left: 2rem;
+  background: linear-gradient(90deg, rgba(46, 164, 79, 0.12), transparent);
+}
+
+.layer:nth-child(4) {
+  margin-left: 3rem;
+  background: linear-gradient(90deg, rgba(46, 164, 79, 0.06), transparent);
+}
+
+.layerLabel {
+  font-weight: 600;
+  color: var(--onivoro-text);
+  font-size: 0.95rem;
+}
+
+.layerDesc {
+  font-size: 0.85rem;
+  color: var(--onivoro-text-muted);
+}
+
+/* Hexagonal Diagram */
+.hexDiagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hexCore {
+  width: 140px;
+  height: 140px;
+  background: var(--gradient-primary);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.hexPorts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.port {
+  padding: 0.5rem 1rem;
+  background: var(--onivoro-dark);
+  border: 1px solid var(--onivoro-primary);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--onivoro-primary);
+}
+
+/* Why TypeScript Section */
+.whyTypescript {
+  background: var(--onivoro-dark-secondary);
+  border: 1px solid var(--onivoro-border);
+  border-radius: 16px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.whyTitle {
+  font-size: 1.5rem;
+  color: var(--onivoro-text);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.whyCard {
+  padding: 1.5rem;
+  background: var(--onivoro-dark);
+  border-radius: 12px;
+  border: 1px solid var(--onivoro-border);
+  text-align: left;
+}
+
+.whyCard h4 {
+  font-size: 1.1rem;
+  color: var(--onivoro-text);
+  margin-bottom: 0.75rem;
+}
+
+.whyCard p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--onivoro-text-muted);
+}
+
+.whyCard strong {
+  color: var(--onivoro-primary);
+}
+
+/* Comparison */
+.comparison {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.comparisonText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--onivoro-text-muted);
+}
+
+.comparisonText strong {
+  color: var(--onivoro-accent);
+}
+
+.comparisonText em {
+  color: var(--onivoro-primary);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Responsive adjustments for architecture section */
+@media (max-width: 768px) {
+  .architectureGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .architectureCard {
+    padding: 1.5rem;
+  }
+
+  .layer:nth-child(1),
+  .layer:nth-child(2),
+  .layer:nth-child(3),
+  .layer:nth-child(4) {
+    margin-left: 0;
+  }
+
+  .whyTypescript {
+    padding: 1.5rem;
+  }
+
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.primaryLink,
+.secondaryLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.primaryLink {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.primaryLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(46, 164, 79, 0.4);
+  text-decoration: none;
+  color: white;
+}
+
+.secondaryLink {
+  background: var(--onivoro-dark-secondary);
+  border: 1px solid var(--onivoro-border);
+  color: var(--onivoro-text);
+}
+
+.secondaryLink:hover {
+  border-color: var(--onivoro-primary);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.githubIcon,
+.npmIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--onivoro-border);
+  color: var(--onivoro-text-muted);
+  font-size: 0.9rem;
+}
+
+.copyright {
+  color: var(--onivoro-text-muted);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .missionText {
+    font-size: 1.1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryLink,
+  .secondaryLink {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
