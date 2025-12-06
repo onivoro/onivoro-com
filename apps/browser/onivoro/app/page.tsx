@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 
       <section className={styles.mission}>
-        <h2 className={styles.sectionTitle}>Our Mission</h2>
+        <h2 className={styles.sectionTitle}>The Vibe</h2>
         <p className={styles.missionText}>
           We believe that TypeScript is the universal language of modern software development.
           Our mission is to <strong>consume everything in TypeScript</strong> — bridging gaps

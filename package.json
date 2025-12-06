@@ -2,7 +2,10 @@
   "name": "@onivoro/onivoro-com",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "local": "npx nx dev @onivoro/app-browser-onivoro",
+    "build": "npx nx build @onivoro/app-browser-onivoro"
+  },
   "private": true,
   "devDependencies": {
     "@nx/js": "21.2.1",
